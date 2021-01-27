@@ -55,17 +55,16 @@
         <!-- STATIC Stylesheet -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/header.css') }}">
 
-        <!-- STATIC Scripts --> 
-        {{-- <script src="{{asset('js/app.js')}}"></script> --}}
+        <!-- STATIC Scripts -->
 
         @hasSection('noMaster') @else
             <link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
-        @endif
+            @endif
 
-        <!-- GENERATE Stylesheet -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+            <!-- GENERATE Stylesheet -->
+            <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-        @if($styles ?? null)
+            @if($styles ?? null)
             @foreach($styles as $style)
             <link rel="stylesheet" type="text/css"
             href="{{ asset('css/'.$style.'.css') }}">
@@ -74,8 +73,7 @@
     </head>
 
     <body class="row">
-        @include('layouts.header')
+        {{-- @include('layouts.header') --}}
         @yield('content')
     </body>
-
 </html>
