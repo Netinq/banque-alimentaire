@@ -73,7 +73,7 @@
     </head>
 
     <body class="row">
-        {{-- @include('layouts.header') --}}
+        @include('layouts.header')
         @yield('content')
     </body>
 </html>

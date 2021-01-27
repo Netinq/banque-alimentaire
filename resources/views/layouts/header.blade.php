@@ -1,16 +1,13 @@
-<header class="col-10 offest-1">
-    <a id="title" href="/">
-        <div class="col">
-            Banque alimentaire
-            <span class="region">de Bordeaux et de la Gironde</span>
-        </div>
-    </a>
-    <div>
-        <a href="/">Découvrir</a>
-        <a href="/contact">Contact</a>
+<header class="col-10 offset-1 row">
+    <div class="col-4">
+        <a id="title" href="/">
+            <img>
+        </a>
     </div>
-    <div>
-        <a href="/login">Connexion</a>
-        <a href="/inscription"><span class="inscripton">Inscription</span></a>
-    </div>
+    <nav class="col-8">
+        <a href="/"><div class="nav-btn">Découvrir</div></a>
+        <a href="/contact"><div class="nav-btn">Contact</div></a>
+        <a href="/login"><div class="nav-btn">Connexion</div></a>
+        <a href="/register"><div class="nav-btn register">Inscription</div></a>
+    </nav>
 </header>
