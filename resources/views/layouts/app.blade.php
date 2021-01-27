@@ -1,5 +1,7 @@
 @section('description', 'Créez votre vitrine en ligne, développez un e-commerce, proposez un service de réservation en ligne à vos clients...')
 
+{{-- Keyword, Description, Title, Image --}}
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -38,8 +40,6 @@
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://banque-alimentaire.fr' />
         <meta property='og:site_name' content='{{Config::get('app.name')}}' />
-        <meta property='author' content='Quentin Sar' />
-        <meta property='profile:gender' content='male' />
         <meta property="og:locale" content="fr_FR" />
 
         <!-- IOS meta -->
