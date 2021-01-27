@@ -3,18 +3,26 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #cfcfcf;
+    background-color: #ffffff;
     height: 75px;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 50px 50px;
+    position: fixed;
+    z-index: 100000;
 }
 
-
-.col {
-    display: flex;
-    flex-direction: column;
+header nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-#title {
+header nav .nav-btn {
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    padding: 15px;
+}
+
+/* #title {
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
@@ -38,4 +46,4 @@ header{
 .region {
     font-weight: thin;
     font-size: 20px;
-}
+} */

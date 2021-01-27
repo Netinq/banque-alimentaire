@@ -1,4 +1,8 @@
-body {
+.content {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -7,7 +11,6 @@ body {
     background-color: rgba(242, 109, 32, 0.5);
     border-radius: 50%;
     cursor: pointer;
-    z-index: 100;
 }
 .marker::after {
     content: " ";
