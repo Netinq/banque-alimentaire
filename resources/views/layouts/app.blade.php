@@ -53,7 +53,7 @@
         </title>
 
         <!-- STATIC Stylesheet -->
-        {{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/header.css') }}"> --}}
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/header.css') }}">
 
         <!-- STATIC Scripts -->
 
