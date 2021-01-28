@@ -1,4 +1,4 @@
-@section('description', 'Créez votre vitrine en ligne, développez un e-commerce, proposez un service de réservation en ligne à vos clients...')
+@section('description', 'Rejoignez dès maintenant la Banque Alimentaire de Bordeaux. Devenez partenaires ou inscrivez-vous en tant que bénévole afin d\'aider nos partenaires !')
 
 {{-- Keyword, Description, Title, Image --}}
 
