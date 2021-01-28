@@ -9,8 +9,8 @@
     <div id="mapover" class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 offset-sm-3 offset-md-5 offset-lg-6 offset-xl-7">
         <div id="container" class="hide">
             <h2 id="part_title">Titre partenaire</h2>
-            <p><span id="part_place">00</span> Place(s) disponible(s)</p>
-            <img class="separator" src="{{ asset('svg/separator.svg') }}" alt="Separator">
+            <p><span id="part_place">0</span> Place(s) restante(s)</p>
+            {{-- <img class="separator" src="{{ asset('svg/separator.svg') }}" alt="Separator"> --}}
             <div class="categories">
                 <div class="category">
                     <img src="{{ asset('svg/categories/food.svg') }}" alt="Food icon">
@@ -24,12 +24,8 @@
                     <img src="{{ asset('svg/categories/food.svg') }}" alt="Food icon">
                     <p>Restauration</p>
                 </div>
-                <div class="category">
-                    <img src="{{ asset('svg/categories/food.svg') }}" alt="Food icon">
-                    <p>Restauration</p>
-                </div>
             </div>
-            <img class="separator" src="{{ asset('svg/separator.svg') }}" alt="Separator">
+            {{-- <img class="separator" src="{{ asset('svg/separator.svg') }}" alt="Separator"> --}}
             <a href="#"><div class="adress-content">
                 <img src="{{asset('svg/location.svg')}}" alt="Location icon">
                 <div class="adress">
