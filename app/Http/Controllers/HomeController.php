@@ -6,8 +6,12 @@ class HomeController extends Controller
 {
     public function home()
     {
-        $name = "Germain Sar";
-
-        return view("home", compact('name'));
+        //TODO PARTNER LIST
+        return view("home");
     }
+
+    // public function legal()
+    // {
+    //     return view('legal');
+    // }
 }

@@ -59,7 +59,7 @@
     #mapover {
         --large: 1rem;
         --medium: 0.8rem;
-        --small: 0.7rem;
+        --small: 0.6rem;
     }
 }
 
@@ -129,6 +129,7 @@
 
 #container .category img {
     height: 15px;
+    padding: 0;
 }
 
 #container .category p {
