@@ -4,7 +4,19 @@ body {
     margin: 0 !important;
     padding: 0;
     overflow-x: hidden;
+    --background-color: rgba(243, 243, 243, 0.25);
+    --blur: blur(20px);
+    --background-color-secondary: rgba(255, 255, 255, 0.3)
 }
+
+.high-contrast
+{
+    --background-color: rgb(255, 255, 255);
+    --blur: none;
+    --background-color-secondary: rgba(246, 246, 246, 1);
+}
+.high-contrast header .contrast #off { display: flex; }
+.high-contrast header .contrast #on { display: none; }
 
 a {
     text-decoration: none !important;

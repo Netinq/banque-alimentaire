@@ -76,4 +76,5 @@
         @include('layouts.header')
         @yield('content')
     </body>
+    <script src="{{asset('js/contrast.js')}}"></script>
 </html>
