@@ -25,14 +25,14 @@
 }
 
 .selected {
-    background-color: rgba(32, 242, 112, 0.5);
+    background-color: rgba(30, 200, 95, 0.5);
 }
 .selected::after {
-    background-color: rgba(32, 242, 112, 0.5);
-    height: 150%;
-    width: 150%;
-    top: -25%;
-    left: -25%;
+    background-color: rgba(30, 200, 95, 0.5);
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
 }
 
 #mapover {
@@ -42,7 +42,7 @@
     justify-content: flex-end;
     height: auto;
     padding: 0;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
     --large: 1.6rem;
     --medium: 1.1rem;
     --small: 0.7rem;
@@ -74,11 +74,11 @@
     text-align: center;
     padding: 50px;
     z-index: 1000;
-    background-color: rgba(243, 243, 243, 0.25);
-    backdrop-filter: blur(20px);
+    background-color: var(--background-color);
+    backdrop-filter: var(--blur);
 }
 
-/* .hide { display: none !important; } */
+.hide { display: none !important; }
 
 #container h2 {
     color: #f26e20;
@@ -139,7 +139,7 @@
 
 #container .adress-content {
     padding: 10px;
-    background-color: rgba(245, 245, 245, 0.7);
+    background-color: var(--background-color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,9 +187,17 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
+@media (max-width: 575px) {
+#container button {
+    bottom: -25px;
+    right: 25%;
+    left: 25%;
+}
+}
 
 #container button img {
     height: 15px;
+    padding: 0;
     margin-right: 15px;
 }
 
@@ -197,5 +205,10 @@
     .col-xl-4 {
         flex: 0 0 25.0%;
         max-width: 25.0%;
+    }
+}
+@media (min-width: 1500px) {
+    .offset-xl-7 {
+        margin-left: 66%;
     }
 }
