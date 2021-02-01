@@ -1,7 +1,7 @@
 <header class="col-10 offset-1 row">
     <div class="col-4">
         <a id="title" href="/">
-            <img src="{{ asset('svg/logo.svg') }}" alt="Banque Alimentaire de Bordeaux et de la Gironde">
+            <img src="{{ asset('img/logo.png') }}" alt="Banque Alimentaire de Bordeaux et de la Gironde">
         </a>
     </div>
     <nav class="col-8">

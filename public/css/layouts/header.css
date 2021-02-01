@@ -60,6 +60,6 @@ header .contrast #off { display: none; }
 header .contrast #on { display: flex; }
 
 img {
-    height: 35px;
+    height: 45px;
     padding-left: 30px;
 }
