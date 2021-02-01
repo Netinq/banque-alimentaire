@@ -17,8 +17,6 @@ class CreateStatesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('identifier')->index();
-            // $table->string('region_id')->nullable();
-            // $table->foreign('region_id')->references('identifier')->on('regions')->onDelete('set null');
         });
     }
 
