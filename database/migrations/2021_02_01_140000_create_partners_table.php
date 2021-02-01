@@ -24,6 +24,8 @@ class CreatePartnersTable extends Migration
             $table->float('lattitude', 10, 8);
             $table->float('longitude', 11, 8);
             $table->string('contact', 150);
+            $table->integer('max_volunteers')->unsigned();
+            $table->integer('actual_volunteers')->unsigned();
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
 
