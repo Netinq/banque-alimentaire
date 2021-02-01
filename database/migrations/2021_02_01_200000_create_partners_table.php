@@ -10,13 +10,11 @@ class CreatePartnersTable extends Migration
     {
         Schema::create('partners', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id')->unsigned();
             $table->bigInteger('state_id')->unsigned();
             $table->string('name', 150);
-            $table->string('email', 150)->unique();
-            $table->string('password');
             $table->string('siret', 14)->nullable();
             $table->string('naf', 8)->nullable();
-            $table->string('phone', 14);
             $table->string('adress');
             $table->string('adress_details');
             $table->string('zip', 5);
@@ -26,10 +24,10 @@ class CreatePartnersTable extends Migration
             $table->string('contact', 150);
             $table->integer('max_volunteers')->unsigned();
             $table->integer('actual_volunteers')->unsigned();
-            $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
 
             $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
