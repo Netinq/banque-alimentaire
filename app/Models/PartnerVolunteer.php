@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Partner_Volunteer extends Model
 {
     use HasFactory;
+
+    public $timestamps = false;
 }
