@@ -5,9 +5,9 @@
         </a>
     </div>
     <nav class="col-8">
-        <div class="nav-btn contrast" onclick="switch_contrast()">
+        {{-- <div class="nav-btn contrast" onclick="switch_contrast()">
             <img id="on" src="{{ asset('svg/visibility.svg') }}"><img id="off" src="{{ asset('svg/visibility_off.svg') }}">Version Contrastée
-        </div>
+        </div> --}}
         <a href="/">
             <div class="nav-btn">Carte</div>
         </a>
