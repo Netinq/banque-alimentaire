@@ -54,6 +54,7 @@
 
         <!-- STATIC Stylesheet -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/header.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/footer.css') }}">
 
         <!-- STATIC Scripts -->
 
@@ -75,6 +76,7 @@
     <body class="row">
         @include('layouts.header')
         @yield('content')
+        @include('layouts.footer')
     </body>
     <script src="{{asset('js/contrast.js')}}"></script>
 </html>

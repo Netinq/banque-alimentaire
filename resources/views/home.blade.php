@@ -37,6 +37,7 @@
         </div>
     </div>
 </div>
+<div id="home-space"></div>
 <script>
     const geojson = {
     type: "FeatureCollection",
