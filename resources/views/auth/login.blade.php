@@ -1,7 +1,7 @@
 @extends('layouts.app', ['styles' => ['auth/auth']])
 
 @section('content')
-<section class="col-10 col-sm-8 col-md-6 col-xl-4 offset-1 offset-sm-2 offset-md-3 offset-xl-4" id="login">
+<section class="form-ui col-10 col-sm-8 col-md-6 col-xl-4 offset-1 offset-sm-2 offset-md-3 offset-xl-4">
     <form method="POST" action="{{ route('login') }}">
         @csrf
         {{-- <h1>Devenez membre</h1>
