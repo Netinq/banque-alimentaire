@@ -1,4 +1,4 @@
-import { geojson } from './locations.js'
+// import { geojson } from './locations.js'
 
 mapboxgl.accessToken = "pk.eyJ1IjoibmV0aW5xIiwiYSI6ImNra2N0azJvajBpOWoycHFydWRkcWo5MXMifQ.iCXY_CWx5r8KEOHHCGu3iw";
 
