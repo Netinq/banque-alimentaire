@@ -37,6 +37,25 @@
         </div>
     </div>
 </div>
+<script>
+    const geojson = {
+    type: "FeatureCollection",
+    features: [
+        {
+            type: "Feature",
+            properties: {
+                message: "Foo",
+                iconSize: [40, 40],
+                name: "MAISON DE QUENTIN",
+                size: 0,
+            },
+            geometry: {
+                type: "Point",
+                coordinates: [{!! json_encode($lo) !!}, {!! json_encode($la) !!}] ,
+            },
+        },
+    ]};
+</script>
 <script type="module" src="{{asset('js/geo/script.js')}}"></script>
 <script type="module" src="{{asset('js/geo/locations.js')}}"></script>
 @endsection

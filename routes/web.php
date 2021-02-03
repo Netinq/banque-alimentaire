@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\VolunteerController;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', [HomeController::class, 'home']);
 
@@ -11,6 +13,4 @@ Route::get('/panel', [App\Http\Controllers\HomeController::class, 'panel'])->nam
 
 Route::get('/account/create/step1', [App\Http\Controllers\AccountController::class, 'step1'])->name('step1');
 
-Route::get('/account/create/step2/partner', [App\Http\Controllers\AccountController::class, 'step2_partner'])->name('step2_partner');
-
-Route::get('/account/create/step2/volunteer', [App\Http\Controllers\AccountController::class, 'step2_volunteer'])->name('step2_volunteer');
+Route::resource('volunteer', VolunteerController::class);
