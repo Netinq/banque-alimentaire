@@ -1,34 +1,35 @@
-@extends('layouts.app', ['styles' => ['auth/auth']])
+@extends('layouts.app', ['styles' => ['legal']])
 
 @section('content')
-<section class="form-ui col-10 col-sm-8 col-md-6 col-xl-4 offset-1 offset-sm-2 offset-md-3 offset-xl-4 text-left my-4">
-    <h1>Mentions légales</h1>
-    <div>
-        Commodo non eu nostrud qui aliqua. Ex cillum consectetur pariatur fugiat nulla. Amet exercitation velit aute aliqua. Cillum reprehenderit dolor cupidatat nostrud enim aute veniam Lorem. Nostrud ullamco labore fugiat amet nulla et ea nostrud enim aliquip incididunt ea incididunt. Cupidatat in ex magna excepteur Lorem esse ipsum voluptate eu sunt anim non consequat pariatur.
+<section class="col-10 col-sm-8 col-md-6 col-xl-4 offset-1 offset-sm-2 offset-md-3 offset-xl-4 text-left my-4">
+    <h2>Mentions légales</h2>
+    <div class="paragraph">
+        Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des Utilisateurs du site https://sarquentin.fr les présentes mentions légales.La connexion et la navigation sur le site sarquentin.fr par l’Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales. Ces dernières sont accessibles sur le site à la rubrique « Mentions légales ».
     </div>
-    <h1>Example</h1>
-    <div>
-        Ut tempor magna cupidatat tempor enim laboris. Ad aliqua non duis tempor ut non nisi laboris in. Tempor fugiat irure nulla occaecat elit velit occaecat. Sit tempor enim id adipisicing velit occaecat tempor veniam. Incididunt laboris et ut aliquip consequat eu eu. In duis ullamco voluptate aliquip.
+    <h2>ARTICLE 1 : L’éditeur</h2>
+    <div class="paragraph">
+        L'édition du site https://sarquentin.fr est assurée par la Société MONSIEUR SAR QUENTIN, déclaré sur le numéro 885 388 132 dont le siège social est situé au 51 rue de la Peloue, 33127 Saint Jean d'Illac, numéro de téléphone 0750976893, adresse e-mail : pro@sarquentin.fr.
+        Le Directeur de la publication est Quentin Sar
     </div>
-    <h1>Example 2</h1>
-    <div>
-        Incididunt non culpa sunt anim officia occaecat eu. Lorem irure ipsum laboris Lorem voluptate sint. Enim ullamco esse sunt ullamco laborum labore amet nulla proident reprehenderit aliquip amet.
+    <h2>ARTICLE 2 : L’hébergeur</h2>
+    <div class="paragraph">
+        L'hébergeur du site https://sarquentin.fr est la Société OVH, dont le siège social est situé au 2 rue Kellermann - 59100 Roubaix - France
     </div>
-    <h1>Example 3</h1>
-    <div>
-        Nisi in labore ullamco consequat deserunt tempor proident nulla quis laborum cillum aliquip. Adipisicing occaecat exercitation sit exercitation in ullamco Lorem officia. Ut dolore aliqua exercitation sint sint laborum ipsum laborum duis ut. Commodo dolore nisi culpa et esse fugiat reprehenderit sit eu voluptate pariatur. Excepteur occaecat velit consequat voluptate pariatur magna cupidatat excepteur irure in id id ex. Fugiat tempor ullamco id amet et enim irure cupidatat pariatur excepteur elit nulla. Nostrud Lorem excepteur consectetur tempor reprehenderit anim magna tempor qui.
+    <h2>ARTICLE 3 : Accès au site</h2>
+    <div class="paragraph">
+        Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance. En cas de modification, interruption ou suspension des services le site https://sarquentin.fr ne saurait être tenu responsable.
     </div>
-    <h1>Example 4</h1>
-    <div>
-        Nostrud cillum ea commodo exercitation tempor minim enim sit aute ad est excepteur qui. Quis nulla est proident non. Eiusmod elit velit nisi aliqua nisi ea minim et fugiat laboris dolor mollit commodo. Do irure Lorem anim laboris velit irure qui reprehenderit labore ipsum elit cillum. Eiusmod officia deserunt amet exercitation tempor consequat do aliqua minim eiusmod. Sint sunt eiusmod minim deserunt nostrud excepteur dolore qui ullamco fugiat elit. Sunt do do excepteur aute laboris qui ipsum irure anim consectetur magna Lorem nostrud.
+    <h2>ARTICLE 4 : Collecte des données</h2>
+    <div class="paragraph">
+        Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne collecte aucune donnée concernant les utilisateurs.
     </div>
-    <h1>Example 5</h1>
-    <div>
-        Id adipisicing magna fugiat consectetur minim exercitation aliqua. Commodo est consectetur laboris in sint ex non aliquip ex nostrud sit cupidatat in ea. Nisi velit irure consequat quis reprehenderit sit in deserunt esse qui nostrud. Consectetur occaecat anim voluptate sint commodo Lorem ut reprehenderit laborum. Incididunt proident sint culpa ullamco eiusmod est.
+    <h2>ARTICLE 5 : Cookies</h2>
+    <div class="paragraph">
+        L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de navigation. En naviguant sur le site, il les accepte. Un cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.
     </div>
-    <h1>Example 6</h1>
-    <div>
-        Excepteur cupidatat cupidatat consectetur cupidatat. Reprehenderit officia aliqua officia Lorem. Quis aute minim officia laboris dolore. Excepteur veniam in deserunt amet exercitation fugiat est. Est ut cupidatat cillum sunt sunt. Elit reprehenderit Lorem culpa aute elit voluptate labore cillum proident ullamco.
+    <h2>ARTICLE 6 : Propriété intellectuelle</h2>
+    <div class="paragraph">
+        Toute utilisation, reproduction, diffusion, commercialisation, modification de tout ou partie du site https://sarquentin.fr, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.
     </div>
 </section>
 @endsection
