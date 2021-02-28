@@ -1,13 +1,13 @@
 <footer class="col-10 offset-1 row py-4 text-center">
     <div class="col-md-2 py-2">
-        <a href="">
+        <a href="/mention-legales">
             <div class="btn">
                 Mentions légales
             </div>
         </a>
     </div>
     <div class="col-md-2 py-2">
-        <a href="">
+        <a href="/rgpd">
             <div class="btn">
                 RGPD
             </div>
@@ -22,7 +22,7 @@
         </a>
     </div>
     <div class="col-md-2 py-2">
-        <a href="">
+        <a href="/cgu">
             <div class="btn">
                 CGU
             </div>
