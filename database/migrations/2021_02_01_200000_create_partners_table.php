@@ -18,7 +18,7 @@ class CreatePartnersTable extends Migration
             $table->string('adress');
             $table->string('adress_details');
             $table->string('zip', 5);
-            $table->string('city', 10);
+            $table->string('city');
             $table->float('lattitude', 10, 8);
             $table->float('longitude', 11, 8);
             $table->string('contact', 150);

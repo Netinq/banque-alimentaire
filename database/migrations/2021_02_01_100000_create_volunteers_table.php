@@ -14,7 +14,7 @@ class CreateVolunteersTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('zip', 5);
-            $table->string('city', 10);
+            $table->string('city');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
