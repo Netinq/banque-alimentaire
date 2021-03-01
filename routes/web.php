@@ -11,6 +11,8 @@ Auth::routes();
 
 Route::get('/panel', [App\Http\Controllers\HomeController::class, 'panel'])->name('panel');
 
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contact'])->name('contact');
+
 Route::get('/rgpd', [App\Http\Controllers\LegalController::class, 'rgpd'])->name('rgpd');
 Route::get('/cgu', [App\Http\Controllers\LegalController::class, 'cgu'])->name('cgu');
 Route::get('/mention-legales', [App\Http\Controllers\LegalController::class, 'mentions'])->name('mention-legales');
