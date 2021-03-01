@@ -53,17 +53,17 @@
         </title>
 
         <!-- STATIC Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/header.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/footer.css') }}">
-
+        
         <!-- STATIC Scripts -->
-
+        
         @hasSection('noMaster') @else
-            <link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
-            @endif
-
-            <!-- GENERATE Stylesheet -->
-            <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
+        @endif
+        
+        <!-- GENERATE Stylesheet -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/header.css') }}">
 
             @if($styles ?? null)
             @foreach($styles as $style)
@@ -79,4 +79,5 @@
         @include('layouts.footer')
     </body>
     <script src="{{asset('js/contrast.js')}}"></script>
+    <script src="{{asset('js/menu.js')}}"></script>
 </html>

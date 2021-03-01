@@ -23,11 +23,11 @@ class PartnerController extends Controller
             'siret' => 'required|string|max:14',
             'naf' => 'required|string|max:8',
             'adress' => 'required|string',
-            'adress_details' => 'required|string',
+            'adress_details' => 'string',
             'zip' => 'required|string|max:5',
-            'city' => 'required|string|max:10',
+            'city' => 'required|string',
             'max_volunteers' => 'required|integer',
-        ]);
+            ]);
 
         $partner  = new Partner();
         $partner->user_id = Auth::id();
@@ -35,18 +35,35 @@ class PartnerController extends Controller
         $partner->siret = request('siret');
         $partner->naf = request('naf');
         $partner->adress = request('adress');
-        $partner->adress_details = request('adress_details');
+        $partner->adress_details = request('adress');
         $partner->zip = request('zip');
         $partner->city = request('city');
         $partner->max_volunteers = request('max_volunteers');
         $partner->actual_volunteers = 0;
 
+        $data = request('adress')." ".request('zip')." ".request('city')." France";
+        $url = "https://api.mapbox.com/geocoding/v5/mapbox.places/51%20rue%20de%20la%20Peloue%2033127%20Saint%20Jean%20d'Illac%20France.json?access_token=pk.eyJ1IjoibmV0aW5xIiwiYSI6ImNra2N0azJvajBpOWoycHFydWRkcWo5MXMifQ.iCXY_CWx5r8KEOHHCGu3iw";
 
+        $curl = curl_init();
+
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_PROXYPORT, 3128);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+
+        $result = curl_exec($curl);
+        curl_close($curl);
+
+        $response = json_decode($result, true);
+
+        $lo = $response['features'][0]['center'][0];
+        $la = $response['features'][0]['center'][1];
+
+        $partner->longitude = $lo;
+        $partner->lattitude = $la;
 
         $partner->save();
-
-        // $table->float('lattitude', 10, 8);
-        // $table->float('longitude', 11, 8);
 
         return redirect()->route('panel');
     }

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\VolunteerController;
+use App\Http\Controllers\PartnerController;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/', [HomeController::class, 'home']);
@@ -20,3 +21,6 @@ Route::get('/mention-legales', [App\Http\Controllers\LegalController::class, 'me
 Route::get('/account/create/step1', [App\Http\Controllers\AccountController::class, 'step1'])->name('step1');
 
 Route::resource('volunteer', VolunteerController::class);
+Route::resource('partner', PartnerController::class);
+
+Route::get('/join/{id}', [App\Http\Controllers\HomeController::class, 'join'])->name('join');

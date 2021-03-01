@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExercicePartnersTable extends Migration
+class CreateEventsPartnersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateExercicePartnersTable extends Migration
      */
     public function up()
     {
-        Schema::create('exercice_partners', function (Blueprint $table) {
+        Schema::create('event_partners', function (Blueprint $table) {
             $table->bigInteger('partner_id')->unsigned();
             $table->bigInteger('event_id')->unsigned();
 

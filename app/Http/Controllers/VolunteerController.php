@@ -18,8 +18,8 @@ class VolunteerController extends Controller
         $this->validate($request, [
             'firstname' => 'required|string',
             'lastname' => 'required|string',
-            'zip' => 'required|string|max:5',
-            'city' => 'required|string|max:10',
+            'zip' => 'required|max:5',
+            'city' => 'required|string',
         ]);
 
         $volunteer  = new Volunteer();

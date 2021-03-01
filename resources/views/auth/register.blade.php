@@ -42,7 +42,7 @@
         <div class="form-group row col-10">
             <label for="password_confirmation" >Confirmation mot de passe</label>
 
-            <input id="password_confirmation" type="confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus>
+            <input id="password_confirmation" type="password" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus>
 
             @error('password_confirmation')
                 <p class="invalid-feedback" role="alert">
