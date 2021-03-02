@@ -42,7 +42,8 @@ class PartnerController extends Controller
         $partner->actual_volunteers = 0;
 
         $data = request('adress')." ".request('zip')." ".request('city')." France";
-        str_replace(' ', '%20', $data);
+        $data = str_replace(' ', '%20', $data);
+        //$url = "https://api.mapbox.com/geocoding/v5/mapbox.places/51%20rue%20de%20la%20Peloue%2033127%20Saint%20Jean%20d'Illac%20France.json?access_token=pk.eyJ1IjoibmV0aW5xIiwiYSI6ImNra2N0azJvajBpOWoycHFydWRkcWo5MXMifQ.iCXY_CWx5r8KEOHHCGu3iw";
         $url = "https://api.mapbox.com/geocoding/v5/mapbox.places/".$data.".json?access_token=pk.eyJ1IjoibmV0aW5xIiwiYSI6ImNra2N0azJvajBpOWoycHFydWRkcWo5MXMifQ.iCXY_CWx5r8KEOHHCGu3iw";
 
         $curl = curl_init();
