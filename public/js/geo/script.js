@@ -19,6 +19,9 @@ geojson.features.forEach(function (marker) {
         el.classList.add('selected');
         document.getElementById("part_title").innerText = marker.properties.name;
         document.getElementById("part_place").innerText = marker.properties.size;
+        let action = document.getElementById("form").action;
+        action = action.replace(-1, marker.properties.id);
+        document.getElementById("form").action = action;
         document.getElementById("container").classList.remove("hide");
         document.getElementById("container").animate([
             { transform: "translateY(50px)", opacity: 0 },

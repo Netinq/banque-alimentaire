@@ -14,6 +14,16 @@
     </button>
 </div>
 @endif
+@if ( Session::has('success'))
+<div class="popup success alert alert-dismissible fade show">
+    <h4>{{ Session::get('success')[0] }}</h4>
+    <span>{{ Session::get('success')[1] }}</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Fermer">
+      <span aria-hidden="true">&times;</span>
+      <span class="sr-only">Fermer</span>
+    </button>
+</div>
+@endif
     <div id="map" style='width: 100vw; height: 100vh;'>
     </div>
     <div id="mapover" class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 offset-sm-3 offset-md-5 offset-lg-6 offset-xl-7">
@@ -43,7 +53,10 @@
                     <p id="city">3300 Bordeaux</p>
                 </div>
             </div></a>
-            <button><img src="{{ asset('svg/join.svg')}}"> Les rejoindre</button>
+            <form method="POST" action="{{ route('join', -1) }}" id="form">
+                @csrf
+                <button><img src="{{ asset('svg/join.svg')}}"> Les rejoindre</button>
+            </form>
         </div>
     </div>
 </div>
@@ -62,6 +75,7 @@
                     iconSize: [40, 40],
                     name: elem['name'],
                     size: elem['max_volunteers']-elem['actual_volunteers'],
+                    id: elem['id']
                 },
                 geometry: {
                     type: "Point",

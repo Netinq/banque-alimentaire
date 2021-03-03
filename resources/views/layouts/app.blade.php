@@ -54,13 +54,13 @@
 
         <!-- STATIC Stylesheet -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/footer.css') }}">
-        
+
         <!-- STATIC Scripts -->
-        
+
         @hasSection('noMaster') @else
         <link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
         @endif
-        
+
         <!-- GENERATE Stylesheet -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/header.css') }}">
@@ -80,4 +80,5 @@
     </body>
     <script src="{{asset('js/contrast.js')}}"></script>
     <script src="{{asset('js/menu.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
 </html>
