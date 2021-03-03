@@ -16,7 +16,7 @@ Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contact'
 
 Route::get('/rgpd', [App\Http\Controllers\LegalController::class, 'rgpd'])->name('rgpd');
 Route::get('/cgu', [App\Http\Controllers\LegalController::class, 'cgu'])->name('cgu');
-Route::get('/mention-legales', [App\Http\Controllers\LegalController::class, 'mentions'])->name('mention-legales');
+Route::get('/mentions-legales', [App\Http\Controllers\LegalController::class, 'mentions'])->name('mentions-legales');
 
 Route::get('/account/create/step1', [App\Http\Controllers\AccountController::class, 'step1'])->name('step1');
 
