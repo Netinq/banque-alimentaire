@@ -11,7 +11,6 @@ class CreatePartnersTable extends Migration
         Schema::create('partners', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id')->unsigned();
-            $table->bigInteger('state_id')->unsigned();
             $table->string('name', 150);
             $table->string('siret', 14)->nullable();
             $table->string('naf', 8)->nullable();
@@ -26,7 +25,6 @@ class CreatePartnersTable extends Migration
             $table->integer('actual_volunteers')->unsigned();
             $table->timestamps();
 
-            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
