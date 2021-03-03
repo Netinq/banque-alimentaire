@@ -55,11 +55,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
     transition: .3s all;
+    color: #fff;
 }
 .form-ui form button:hover, .form-ui form button:active, .form-ui form button:focus {
     background-color: hsl(22, 89%, 54%) !important;
     transform: scale(1.1);
     box-shadow: 0 0 10px #cacaca;
+    color: #fff;
 }
 
 .form-ui form .btn-secondary {

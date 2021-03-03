@@ -6,7 +6,7 @@ use App\Http\Controllers\VolunteerController;
 use App\Http\Controllers\PartnerController;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/', [HomeController::class, 'home']);
+Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Auth::routes();
 
@@ -23,4 +23,5 @@ Route::get('/account/create/step1', [App\Http\Controllers\AccountController::cla
 Route::resource('volunteer', VolunteerController::class);
 Route::resource('partner', PartnerController::class);
 
-Route::get('/join/{id}', [App\Http\Controllers\HomeController::class, 'join'])->name('join');
+Route::post('/join/{id}', [App\Http\Controllers\HomeController::class, 'join'])->name('join');
+Route::post('/mail', [App\Http\Controllers\HomeController::class, 'mail'])->name('mail');
