@@ -1,6 +1,6 @@
 <footer class="col-10 offset-1 row py-4 text-left">
     <div class="col-xl-6">
-    {{-- <img src="{{ asset('img/logo.png') }}" alt="Banque Alimentaire de Bordeaux et de la Gironde"> --}}
+        {{-- <img src="{{ asset('img/logo.png') }}" alt="Banque Alimentaire de Bordeaux et de la Gironde"> --}}
         <h3 class="my-4">Ensemble aidons l'homme à se restaurer</h3>
         <p class="my-4">Les Banques Alimentaires, premier réseau d'aide alimentaire en France depuis plus de 35 ans.</p>
         <div class="col-md-12 row text-center">
@@ -21,6 +21,21 @@
                 <p>de personnes soutenues</p>
             </div>
         </div>
+        <a class="my-3" href="/rgpd">
+            <div class="btn">
+                RGPD
+            </div>
+        </a>
+        <a class="my-3" href="/cgu">
+            <div class="btn">
+                CGU
+            </div>
+        </a>
+        <a class="my-3" href="/mentions-legales">
+            <div class="btn">
+                mention légales
+            </div>
+        </a>
     </div>
     <a class="my-3" href="https://www.banquealimentaire.org/sites/default/files/2020-06/RapportAnnuel_BA2019.pdf" target="_blank">
         <div class="btn btn-primary">
