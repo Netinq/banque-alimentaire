@@ -1,4 +1,4 @@
-@extends('layouts.app', ['styles' => ['auth/auth']])
+@extends('layouts.app', ['styles' => ['legal']])
 
 @section('content')
 <section class="form-ui col-10 col-sm-8 col-md-6 col-xl-4 offset-1 offset-sm-2 offset-md-3 offset-xl-4 text-left my-4">

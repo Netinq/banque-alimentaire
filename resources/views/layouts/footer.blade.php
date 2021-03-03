@@ -21,21 +21,6 @@
                 <p>de personnes soutenues</p>
             </div>
         </div>
-        <a class="my-3" href="/rgpd">
-            <div class="btn">
-                RGPD
-            </div>
-        </a>
-        <a class="my-3" href="/cgu">
-            <div class="btn">
-                CGU
-            </div>
-        </a>
-        <a class="my-3" href="/mentions-legales">
-            <div class="btn">
-                mention légales
-            </div>
-        </a>
     </div>
     <a class="my-3" href="https://www.banquealimentaire.org/sites/default/files/2020-06/RapportAnnuel_BA2019.pdf" target="_blank">
         <div class="btn btn-primary">
@@ -47,4 +32,21 @@
             Rapport d'activité
         </div>
     </a>
+    <div class="col-12 bottom">
+        <a class="my-3" href="/rgpd">
+            <div class="btn-legal">
+                RGPD
+            </div>
+        </a>
+        <a class="my-3" href="/cgu">
+            <div class="btn-legal">
+                CGU
+            </div>
+        </a>
+        <a class="my-3" href="/mentions-legales">
+            <div class="btn-legal">
+                mention légales
+            </div>
+        </a>
+    </div>
 </footer>
