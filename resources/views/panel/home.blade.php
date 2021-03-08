@@ -12,6 +12,7 @@
             </form>
         </div>
     </div>
+    @if ($isPartner)
     <div class="col-12 col-md-6" style="padding: 0;">
         <div class="volunteers">
             <h1>Ils se sont porté volontaires :</h1>
@@ -24,6 +25,7 @@
             @endforeach
         </div>
     </div>
+    @endif
     <div class="col-12 col-md-5 d-none d-md-block offset-md-1" style="padding: 0;">
         <div class="profile">
             <h1>{{ $type }}</h1>
